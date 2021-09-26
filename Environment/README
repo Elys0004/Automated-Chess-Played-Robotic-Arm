@@ -1,0 +1,10 @@
+Place the gripper one and chess_environment folder on the folder inside the (catkin workspace > src > (place the gripper one and chess_environment folder here)),
+then you need to catkin_make to recognize the gripper one and chess_environment as the package 
+
+chess_environment > is the package for only the chess environment
+Gripperone > is the folder of the robot 
+(Inside the gripperone folder has gripperone_description which is the package for the robot)
+
+To launch the chess and robot together > roslaunch chess_environment test.launch
+To launch only the chess environment > roslaunch chess_environment robot.launch
+To launch only the robot > roslaunch gripperone_description gazebo.launch
