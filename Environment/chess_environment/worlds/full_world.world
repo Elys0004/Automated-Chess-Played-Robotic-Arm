@@ -1,0 +1,197 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <world name ="room">
+  	<include>
+  	  <url>model://sun</url>
+  	</include>
+  	
+  	<include>
+  	  <uri>model://full_chessboard/queen_black</uri>
+  	  <pose>0.45 -0.1 0 0 0 0</pose>
+  	</include>
+  	
+  	<include>
+  	  <uri>model://full_chessboard/king_black</uri>
+  	  <pose>0.45 0.1 0 0 0 0</pose>
+  	</include>
+  	
+  	<include>
+  	  <uri>model://full_chessboard/queen_white</uri>
+  	  <pose>1.9 -0.1 0 0 0 0</pose>
+  	</include>
+  	
+  	<include>
+  	  <uri>model://full_chessboard/king_white</uri>
+  	  <pose>1.9 0.1 0 0 0 0</pose>
+  	</include>
+  	
+  	<include>
+  	  <uri>model://full_chessboard/bishop_black</uri>
+  	  <pose>0.45 -0.3 0 0 0 0</pose>
+  	</include>
+  	
+  	<include>
+  	  <uri>model://full_chessboard/bishop_white</uri>
+  	  <pose>1.9 -0.3 0 0 0 0</pose>
+  	</include>
+  	
+  	<include>
+  	  <uri>model://full_chessboard/bishop_white_two</uri>
+  	  <pose>1.9 0.3 0 0 0 0</pose>
+  	</include>
+  	
+  	<include>
+  	  <uri>model://full_chessboard/bishop_black_two</uri>
+  	  <pose>0.45 0.3 0 0 0 0</pose>
+  	</include>
+  	
+  	<include>
+  	  <uri>model://full_chessboard/castle_black</uri>
+  	  <pose>0.45 0.7 0 0 0 0</pose>
+  	</include>
+  	
+  	<include>
+  	  <uri>model://full_chessboard/castle_black_two</uri>
+  	  <pose>0.45 -0.7 0 0 0 0</pose>
+  	</include>
+  	
+  	<include>
+  	  <uri>model://full_chessboard/castle_white</uri>
+  	  <pose>1.9 -0.7 0 0 0 0</pose>
+  	</include>
+  	
+  	<include>
+  	  <uri>model://full_chessboard/castle_white</uri>
+  	  <name>castle_white_two</name>
+  	  <pose>1.9 0.7 0 0 0 0</pose>
+  	</include>
+  	
+  	<include>
+  	  <uri>model://full_chessboard/knight_white</uri>
+  	  <name>knight_white_two</name>
+  	  <pose>1.9 0.5 0 0 0 0</pose>
+  	</include>
+  	
+  	<include>
+  	  <uri>model://full_chessboard/knight_white</uri>
+  	  <name>knight_white</name>
+  	  <pose>1.9 -0.5 0 0 0 0</pose>
+  	</include>
+  	
+  	<include>
+  	  <uri>model://full_chessboard/knight_black</uri>
+  	  <name>knight_black_two</name>
+  	  <pose>0.45 0.5 0 0 0</pose>
+  	</include>
+  	
+  	<include>
+  	  <uri>model://full_chessboard/knight_black</uri>
+  	  <name>knight_black</name>
+  	  <pose>0.45 -0.5 0 0 0 0</pose>
+  	</include>
+  	
+  	<include>
+  	  <uri>model://full_chessboard/pawn_black</uri>
+  	  <name>pawn_black</name>
+  	  <pose>0.65 -0.7 0 0 0 0</pose>
+  	</include>
+  	
+  	<include>
+  	  <uri>model://full_chessboard/pawn_black</uri>
+  	  <name>pawn_black_two</name>
+  	  <pose>0.65 -0.5 0 0 0 0</pose>
+  	</include>
+  	
+  	<include>
+  	  <uri>model://full_chessboard/pawn_black</uri>
+  	  <name>pawn_black_three</name>
+  	  <pose>0.65 -0.3 0 0 0 0</pose>
+  	</include>
+  	
+  	<include>
+  	  <uri>model://full_chessboard/pawn_black</uri>
+  	  <name>pawn_black_four</name>
+  	  <pose>0.65 -0.1 0 0 0 0</pose>
+  	</include>
+  	
+  	<include>
+  	  <uri>model://full_chessboard/pawn_black</uri>
+  	  <name>pawn_black_five</name>
+  	  <pose>0.65 0.1 0 0 0 0</pose>
+  	</include>
+  	
+  	<include>
+  	  <uri>model://full_chessboard/pawn_black</uri>
+  	  <name>pawn_black_six</name>
+  	  <pose>0.65 0.3 0 0 0 0</pose>
+  	</include>
+  	
+  	<include>
+  	  <uri>model://full_chessboard/pawn_black</uri>
+  	  <name>pawn_black_seven</name>
+  	  <pose>0.65 0.5 0 0 0 0</pose>
+  	</include>
+  	
+  	<include>
+  	  <uri>model://full_chessboard/pawn_black</uri>
+  	  <name>pawn_black_eight</name>
+  	  <pose>0.65 0.7 0 0 0 0</pose>
+  	</include>
+  	
+  	<include>
+  	  <uri>model://full_chessboard/pawn_white</uri>
+  	  <name>pawn_white</name>
+  	  <pose>1.7 -0.7 0 0 0 0</pose>
+  	</include>
+  	
+  	<include>
+  	  <uri>model://full_chessboard/pawn_white</uri>
+  	  <name>pawn_white_two</name>
+  	  <pose>1.7 -0.5 0 0 0 0</pose>
+  	</include>
+  	
+  	<include>
+  	  <uri>model://full_chessboard/pawn_white</uri>
+  	  <name>pawn_white_three</name>
+  	  <pose>1.7 -0.3 0 0 0 0</pose>
+  	</include>
+  	
+  	<include>
+  	  <uri>model://full_chessboard/pawn_white</uri>
+  	  <name>pawn_white_four</name>
+  	  <pose>1.7 -0.1 0 0 0 0</pose>
+  	</include>
+  	
+  	<include>
+  	  <uri>model://full_chessboard/pawn_white</uri>
+  	  <name>pawn_white_five</name>
+  	  <pose>1.7 0.1 0 0 0 0</pose>
+  	</include>
+  	
+  	<include>
+  	  <uri>model://full_chessboard/pawn_white</uri>
+  	  <name>pawn_white_six</name>
+  	  <pose>1.7 0.3 0 0 0 0</pose>
+  	</include>
+  	
+  	<include>
+  	  <uri>model://full_chessboard/pawn_white</uri>
+  	  <name>pawn_white_seven</name>
+  	  <pose>1.7 0.5 0 0 0 0</pose>
+  	</include>
+  	
+  	<include>
+  	  <uri>model://full_chessboard/pawn_white</uri>
+  	  <name>pawn_white_eight</name>
+  	  <pose>1.7 0.7 0 0 0 0</pose>
+  	</include>
+  	
+  	<include>
+  	  <uri>model://full_chessboard/chessboard</uri>
+  	  <pose>0.3 -0.88 0 0 0 0</pose>
+  	</include>
+  	
+  	
+  </world>
+ </sdf>
+  	
