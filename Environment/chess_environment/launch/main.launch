@@ -1,0 +1,16 @@
+<launch>
+    <param command="$(find xacro)/xacro $(find gripperone_description)/urdf/gripperone.xacro" 	name="robot_description"/>
+    
+     <arg name="paused" value="true"/>
+     <arg name="use_sim_time" value="true"/>
+     <arg name="gui" value="true"/>
+     <arg name="headless" value="false"/>
+     <arg name="debug" value="false"/>
+
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+   	<arg name="world_name" value="$(find chess_environment)/worlds/full_world.world"/>
+    </include>
+  
+    <node args="-param robot_description -urdf -model gripperone" name="spawn_urdf" pkg="gazebo_ros" type="spawn_model"/>
+</launch>
+  
