@@ -5,31 +5,31 @@ gripperone_controller:
     publish_rate: 50
 
   # Position Controllers --------------------------------------
-  Rev45_position_controller:
+  Rev1_position_controller:
     type: effort_controllers/JointPositionController
-    joint: Rev45
+    joint: Rev1
     pid: {p: 100.0, i: 0.01, d: 10.0}
-  Rev47_position_controller:
+  Rev2_position_controller:
     type: effort_controllers/JointPositionController
-    joint: Rev47
+    joint: Rev2
     pid: {p: 100.0, i: 0.01, d: 10.0}
-  Rev48_position_controller:
+  Rev3_position_controller:
     type: effort_controllers/JointPositionController
-    joint: Rev48
+    joint: Rev3
     pid: {p: 100.0, i: 0.01, d: 10.0}
-  Rev70_position_controller:
+  Rev4_position_controller:
     type: effort_controllers/JointPositionController
-    joint: Rev70
+    joint: Rev4
     pid: {p: 100.0, i: 0.01, d: 10.0}
-  Rev72_position_controller:
+  Rev5_position_controller:
     type: effort_controllers/JointPositionController
-    joint: Rev72
+    joint: Rev5
     pid: {p: 100.0, i: 0.01, d: 10.0}
-  Rev73_position_controller:
+  Rev6_position_controller:
     type: effort_controllers/JointPositionController
-    joint: Rev73
+    joint: Rev6
     pid: {p: 100.0, i: 0.01, d: 10.0}
-  Rev74_position_controller:
+  Rev7_position_controller:
     type: effort_controllers/JointPositionController
-    joint: Rev74
+    joint: Rev7
     pid: {p: 100.0, i: 0.01, d: 10.0}

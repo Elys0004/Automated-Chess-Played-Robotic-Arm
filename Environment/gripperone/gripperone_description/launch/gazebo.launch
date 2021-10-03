@@ -7,6 +7,5 @@
     <arg name="gui" value="true"/>
     <arg name="headless" value="false"/>
     <arg name="debug" value="false"/>
-    <arg name="world_name" value="$(find chess_environment)/worlds/full_world.world"/>zz
   </include>
 </launch>

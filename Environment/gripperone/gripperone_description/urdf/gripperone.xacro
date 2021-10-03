@@ -6,9 +6,9 @@
 <xacro:include filename="$(find gripperone_description)/urdf/gripperone.gazebo" />
 <link name="base_link">
   <inertial>
-    <origin rpy="0 0 0" xyz="0.013100742072346745 3.232305809001723e-17 0.128434649849364"/>
+    <origin rpy="0 0 0" xyz="0.013100742072346582 -9.696917427005168e-17 0.12843464984936392"/>
     <mass value="141.36352349403447"/>
-    <inertia ixx="2.770677" ixy="0.0" ixz="-0.206615" iyy="3.022714" iyz="0.0" izz="2.748975"/>
+    <inertia ixx="2.770677" ixy="0.0" ixz="-0.206615" iyy="3.022714" iyz="-0.0" izz="2.748975"/>
   </inertial>
   <visual>
     <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -25,200 +25,200 @@
   </collision>
 </link>
 
-<link name="joint1_1">
+<link name="link1_1">
   <inertial>
-    <origin rpy="0 0 0" xyz="-1.0718000267990909e-07 -4.7694119584645194e-08 0.09307579320414244"/>
-    <mass value="113.94031727647719"/>
-    <inertia ixx="2.254675" ixy="-0.086553" ixz="1e-06" iyy="2.372499" iyz="0.0" izz="0.859498"/>
+    <origin rpy="0 0 0" xyz="-8.427211298900635e-08 5.7703347655740766e-08 0.09307568139810135"/>
+    <mass value="113.94005755141684"/>
+    <inertia ixx="2.418285" ixy="0.0" ixz="0.0" iyy="2.208886" iyz="-0.0" izz="0.859496"/>
   </inertial>
   <visual>
     <origin rpy="0 0 0" xyz="-0.0 -0.0 -0.37"/>
     <geometry>
-      <mesh filename="package://gripperone_description/meshes/joint1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://gripperone_description/meshes/link1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin rpy="0 0 0" xyz="-0.0 -0.0 -0.37"/>
     <geometry>
-      <mesh filename="package://gripperone_description/meshes/joint1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://gripperone_description/meshes/link1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="joint2_1">
+<link name="link2_1">
   <inertial>
-    <origin rpy="0 0 0" xyz="-0.10327295074466161 0.6089273418612103 0.3786719821622193"/>
-    <mass value="96.27136209757765"/>
-    <inertia ixx="2.48842" ixy="-0.480346" ixz="-1.266892" iyy="3.142308" iyz="-0.670206" izz="2.85203"/>
+    <origin rpy="0 0 0" xyz="2.848833931279658e-09 7.523744194818709e-09 0.19455703848130457"/>
+    <mass value="96.27136210018317"/>
+    <inertia ixx="3.396419" ixy="0.0" ixz="0.0" iyy="4.009316" iyz="-0.0" izz="1.077023"/>
   </inertial>
   <visual>
-    <origin rpy="0 0 0" xyz="-0.236821 0.537664 -0.329554"/>
+    <origin rpy="0 0 0" xyz="-0.0 -0.0 -0.586"/>
     <geometry>
-      <mesh filename="package://gripperone_description/meshes/joint2_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://gripperone_description/meshes/link2_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin rpy="0 0 0" xyz="-0.236821 0.537664 -0.329554"/>
+    <origin rpy="0 0 0" xyz="-0.0 -0.0 -0.586"/>
     <geometry>
-      <mesh filename="package://gripperone_description/meshes/joint2_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://gripperone_description/meshes/link2_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="joint3_1">
+<link name="link3_1">
   <inertial>
-    <origin rpy="0 0 0" xyz="-0.3006557452257342 0.8620225825226824 0.7038618877101326"/>
-    <mass value="89.40771247233054"/>
-    <inertia ixx="1.288648" ixy="-0.616924" ixz="-0.662613" iyy="2.128459" iyz="-0.350533" izz="1.811078"/>
+    <origin rpy="0 0 0" xyz="1.6361981853577748e-11 -0.12111140707026075 0.11882892529648226"/>
+    <mass value="89.40771046157806"/>
+    <inertia ixx="2.454822" ixy="-0.0" ixz="0.0" iyy="0.570231" iyz="0.274684" izz="2.203132"/>
   </inertial>
   <visual>
-    <origin rpy="0 0 0" xyz="-0.705555 0.644442 -0.350522"/>
+    <origin rpy="0 0 0" xyz="-0.0 -0.0 -1.086"/>
     <geometry>
-      <mesh filename="package://gripperone_description/meshes/joint3_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://gripperone_description/meshes/link3_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin rpy="0 0 0" xyz="-0.705555 0.644442 -0.350522"/>
+    <origin rpy="0 0 0" xyz="-0.0 -0.0 -1.086"/>
     <geometry>
-      <mesh filename="package://gripperone_description/meshes/joint3_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://gripperone_description/meshes/link3_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="hand1_1">
+<link name="link4_1">
   <inertial>
-    <origin rpy="0 0 0" xyz="0.024678634651751352 -0.040622167017643096 -0.05014720983574655"/>
-    <mass value="0.48552512703105294"/>
-    <inertia ixx="0.001689" ixy="0.000363" ixz="0.000454" iyy="0.001286" iyz="-0.000776" izz="0.00087"/>
+    <origin rpy="0 0 0" xyz="5.732430246041531e-09 0.006084952212643602 -0.350432800798794"/>
+    <mass value="67.90969466672291"/>
+    <inertia ixx="4.721933" ixy="0.0" ixz="0.0" iyy="5.052297" iyz="0.010769" izz="0.494355"/>
   </inertial>
   <visual>
-    <origin rpy="0 0 0" xyz="-1.175378 -0.593511 -0.483357"/>
+    <origin rpy="0 0 0" xyz="-0.0 0.427705 -1.229651"/>
     <geometry>
-      <mesh filename="package://gripperone_description/meshes/hand1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://gripperone_description/meshes/link4_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin rpy="0 0 0" xyz="-1.175378 -0.593511 -0.483357"/>
+    <origin rpy="0 0 0" xyz="-0.0 0.427705 -1.229651"/>
     <geometry>
-      <mesh filename="package://gripperone_description/meshes/hand1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://gripperone_description/meshes/link4_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="hand2_1">
+<link name="link5_1">
   <inertial>
-    <origin rpy="0 0 0" xyz="-0.019166317785168863 0.04449500540777651 -0.035313298052848774"/>
-    <mass value="0.4769330474880143"/>
-    <inertia ixx="0.008656" ixy="0.002098" ixz="-0.000469" iyy="0.006282" iyz="0.000229" izz="0.004948"/>
+    <origin rpy="0 0 0" xyz="-0.00019749374404857904 0.00011331788739532556 -0.037173182060112164"/>
+    <mass value="9.640360366038745"/>
+    <inertia ixx="0.052864" ixy="3e-06" ixz="-0.000271" iyy="0.057534" iyz="0.000179" izz="0.017456"/>
   </inertial>
   <visual>
-    <origin rpy="0 0 0" xyz="-1.1476 -0.646015 -0.483203"/>
+    <origin rpy="0 0 0" xyz="-0.0 0.427705 -0.459651"/>
     <geometry>
-      <mesh filename="package://gripperone_description/meshes/hand2_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://gripperone_description/meshes/link5_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin rpy="0 0 0" xyz="-1.1476 -0.646015 -0.483203"/>
+    <origin rpy="0 0 0" xyz="-0.0 0.427705 -0.459651"/>
     <geometry>
-      <mesh filename="package://gripperone_description/meshes/hand2_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://gripperone_description/meshes/link5_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="joint4_1">
+<link name="finger2_1">
   <inertial>
-    <origin rpy="0 0 0" xyz="-0.28427456294080167 1.1902164027055213 -0.6331625187105112"/>
-    <mass value="67.90970433611581"/>
-    <inertia ixx="2.883631" ixy="-0.972726" ixz="1.982823" iyy="4.207821" iyz="1.048961" izz="3.17807"/>
+    <origin rpy="0 0 0" xyz="-0.04829429334826497 0.003040511211788388 -0.05130413342970386"/>
+    <mass value="0.4623368422198283"/>
+    <inertia ixx="0.001069" ixy="6.5e-05" ixz="-0.000864" iyy="0.001847" iyz="7.3e-05" izz="0.000811"/>
   </inertial>
   <visual>
-    <origin rpy="0 0 0" xyz="-1.169729 0.720857 -1.590984"/>
+    <origin rpy="0 0 0" xyz="0.03137 0.43251 -0.249342"/>
     <geometry>
-      <mesh filename="package://gripperone_description/meshes/joint4_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://gripperone_description/meshes/finger2_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin rpy="0 0 0" xyz="-1.169729 0.720857 -1.590984"/>
+    <origin rpy="0 0 0" xyz="0.03137 0.43251 -0.249342"/>
     <geometry>
-      <mesh filename="package://gripperone_description/meshes/joint4_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://gripperone_description/meshes/finger2_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="joint5_1">
+<link name="finger1_1">
   <inertial>
-    <origin rpy="0 0 0" xyz="-0.47198752110351117 0.4278031143628675 -1.3488693163735603"/>
-    <mass value="9.640341866039392"/>
-    <inertia ixx="0.056508" ixy="0.001921" ixz="-0.000566" iyy="0.053876" iyz="-0.000606" izz="0.01747"/>
+    <origin rpy="0 0 0" xyz="0.04744712111684282 0.003574152417180565 -0.050098979095702684"/>
+    <mass value="0.48552638735874726"/>
+    <inertia ixx="0.001074" ixy="-5.1e-05" ixz="0.000898" iyy="0.001899" iyz="5.4e-05" izz="0.000871"/>
   </inertial>
   <visual>
-    <origin rpy="0 0 0" xyz="-1.642416 -0.198355 -2.005218"/>
+    <origin rpy="0 0 0" xyz="-0.02803 0.43251 -0.249187"/>
     <geometry>
-      <mesh filename="package://gripperone_description/meshes/joint5_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://gripperone_description/meshes/finger1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin rpy="0 0 0" xyz="-1.642416 -0.198355 -2.005218"/>
+    <origin rpy="0 0 0" xyz="-0.02803 0.43251 -0.249187"/>
     <geometry>
-      <mesh filename="package://gripperone_description/meshes/joint5_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://gripperone_description/meshes/finger1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<joint name="Rev45" type="continuous">
+<joint name="Rev1" type="continuous">
   <origin rpy="0 0 0" xyz="0.0 0.0 0.37"/>
   <parent link="base_link"/>
-  <child link="joint1_1"/>
+  <child link="link1_1"/>
   <axis xyz="0.0 0.0 -1.0"/>
 </joint>
 
-<joint name="Rev47" type="continuous">
-  <origin rpy="0 0 0" xyz="0.236821 -0.537664 -0.040446"/>
-  <parent link="joint1_1"/>
-  <child link="joint2_1"/>
-  <axis xyz="0.467614 -0.883933 -0.0"/>
+<joint name="Rev2" type="continuous">
+  <origin rpy="0 0 0" xyz="0.0 0.0 0.216"/>
+  <parent link="link1_1"/>
+  <child link="link2_1"/>
+  <axis xyz="1.0 0.0 -0.0"/>
 </joint>
 
-<joint name="Rev48" type="continuous">
-  <origin rpy="0 0 0" xyz="0.468734 -0.106778 0.020968"/>
-  <parent link="joint2_1"/>
-  <child link="joint3_1"/>
-  <axis xyz="-0.467614 0.883933 0.0"/>
+<joint name="Rev3" type="continuous">
+  <origin rpy="0 0 0" xyz="0.0 0.0 0.5"/>
+  <parent link="link2_1"/>
+  <child link="link3_1"/>
+  <axis xyz="-1.0 0.0 0.0"/>
 </joint>
 
-<joint name="Rev70" type="continuous">
-  <origin rpy="0 0 0" xyz="-0.467038 0.395156 -1.521861"/>
-  <parent link="joint5_1"/>
-  <child link="hand1_1"/>
-  <axis xyz="0.883832 0.467561 -0.015075"/>
+<joint name="Rev4" type="continuous">
+  <origin rpy="0 0 0" xyz="0.0 -0.427705 0.143651"/>
+  <parent link="link3_1"/>
+  <child link="link4_1"/>
+  <axis xyz="1.0 0.0 -0.0"/>
 </joint>
 
-<joint name="Rev72" type="continuous">
-  <origin rpy="0 0 0" xyz="-0.494816 0.44766 -1.522015"/>
-  <parent link="joint5_1"/>
-  <child link="hand2_1"/>
-  <axis xyz="0.883832 0.467561 -0.015075"/>
+<joint name="Rev5" type="continuous">
+  <origin rpy="0 0 0" xyz="0.0 0.0 -0.77"/>
+  <parent link="link4_1"/>
+  <child link="link5_1"/>
+  <axis xyz="-1.0 -0.0 0.0"/>
 </joint>
 
-<joint name="Rev73" type="continuous">
-  <origin rpy="0 0 0" xyz="0.464174 -0.076415 1.240462"/>
-  <parent link="joint3_1"/>
-  <child link="joint4_1"/>
-  <axis xyz="0.467614 -0.883933 0.0"/>
+<joint name="Rev6" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.03137 -0.004805 -0.210309"/>
+  <parent link="link5_1"/>
+  <child link="finger2_1"/>
+  <axis xyz="-0.0 -1.0 -0.0"/>
 </joint>
 
-<joint name="Rev74" type="continuous">
-  <origin rpy="0 0 0" xyz="0.472687 0.919212 0.414234"/>
-  <parent link="joint4_1"/>
-  <child link="joint5_1"/>
-  <axis xyz="0.467614 -0.883933 0.0"/>
+<joint name="Rev7" type="continuous">
+  <origin rpy="0 0 0" xyz="0.02803 -0.004805 -0.210464"/>
+  <parent link="link5_1"/>
+  <child link="finger1_1"/>
+  <axis xyz="-0.0 -1.0 -0.0"/>
 </joint>
 
 </robot>
