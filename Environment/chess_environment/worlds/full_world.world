@@ -5,6 +5,10 @@
   	  <uri>model://sun</uri>
   	</include>
   	
+    <include>
+  	  <uri>model://ground_plane</uri>
+  	</include>
+    
   	<include>
   	  <uri>model://full_chessboard/queen_black</uri>
   	  <pose>0.45 -0.1 0 0 0 0</pose>
