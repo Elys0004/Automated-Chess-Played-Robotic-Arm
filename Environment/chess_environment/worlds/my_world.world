@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+	<world name="my_world">
+		<include><!-- Add in a light source --> 
+			<uri>model://sun</uri>
+		</include>
+		<include><!-- Add your custom model -->
+			<uri>model://king_chess</uri>
+			<name>simple_kingchess</name>
+			<pose>1.5 0 0 0 0 0</pose>
+		</include>
+	</world>
+</sdf>
