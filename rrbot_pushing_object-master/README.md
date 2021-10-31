@@ -1,3 +1,8 @@
+Need to launch 3 things:
+1. roslaunch rrbot_gazebo rrbot_obstacle_world.launch
+2. roslaunch rrbot_control rrbot_control.launch
+3. (need to go to rrbot_pushing_object_basic directory) then "python3 armpushingobject.py
+
 # rrbot_pushing_object
 Simple tasks of pushing a nearby object by the RR robotic arm. This project was implemented in the ROS and Gazebo.
 It is based on [gazebo_ros_demos](https://github.com/ros-simulation/gazebo_ros_demos).
