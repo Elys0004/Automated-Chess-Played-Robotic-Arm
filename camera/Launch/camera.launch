@@ -1,0 +1,6 @@
+<launch>
+	<node name="camera_stream" pkg="camera" type="node.py" />
+	<param command="$(find urdf)/urdf $/camera.urdf" name="camera"/>
+ 	<node args="-param camera -urdf -model camera1.urdf" name="spawn_urdf" pkg="gazebo_ros" type="spawn_model"/>
+</launch>
+

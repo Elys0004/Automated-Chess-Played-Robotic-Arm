@@ -10,20 +10,20 @@
                 <geometry>
                     <mesh>
 			<uri>model://full_chessboard/bishop_white_two/meshes/Bishop_w.dae</uri>
-			<scale>0.2 0.2 0.2</scale>
+			<scale>0.15 0.15 0.15</scale>
 		    </mesh>
                 </geometry>
           </collision>
           <inertial>
 				<pose>0 0 0.018 0 0 0</pose>
-				<mass>0.0033333333</mass>
+				<mass>0.0025</mass>
 				<inertia>
-					<ixx>0.000000035155178</ixx>
+					<ixx>0.000000008342466</ixx>
 					<ixy>0.0</ixy>
 					<ixz>0.0</ixz>
-					<iyy>0.000000035155178</iyy>
+					<iyy>0.000000008342475</iyy>
 					<iyz>0.0</iyz>
-					<izz>0.000000000052920</izz>
+					<izz>0.000000000012561</izz>
 				</inertia>
 	    </inertial>
       <visual name="visual">
@@ -31,7 +31,7 @@
         <geometry>
           <mesh>
             <uri>model://full_chessboard/bishop_white_two/meshes/Bishop_w.dae</uri>
-            <scale>0.2 0.2 0.2</scale>
+            <scale>0.15 0.15 0.15</scale>
           </mesh>
         </geometry>
       </visual>
