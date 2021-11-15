@@ -1,0 +1,76 @@
+gripperone:
+  moveit_sim_hw_interface:
+    joint_model_group: arm
+    joint_model_group_pose: straight
+# Settings for ros_control_boilerplate control loop
+  generic_hw_control_loop:
+    loop_hz: 300
+    cycle_time_error_threshold: 0.01
+# Settings for ros_control hardware interface
+  hardware_interface:
+    joints:
+      - Rev1
+      - Rev2
+      - Rev3
+      - Rev4
+      - Rev5
+      - Rev6
+      - Rev7
+    sim_control_mode: 1 
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50  
+    
+  arm_controller:
+    type: effort_controllers/JointTrajectoryController
+    joints:
+        - Rev1
+        - Rev2
+        - Rev3
+        - Rev4
+    gains:
+        Rev1: { p: 2000, d: 50, i: 0.01, i_clamp: 10000 }
+        Rev2: { p: 2000, d: 100, i: 0.01, i_clamp: 10000 }
+        Rev3: { p: 2000, d: 50, i: 0.01, i_clamp: 1 }
+        Rev4: { p: 2000, d: 70, i: 0.01, i_clamp: 10000 }
+
+    constraints:
+        goal_time: 10.0
+    state_publish_rate: 25
+
+  hand_controller:
+    type: effort_controllers/JointTrajectoryController
+    joints:
+        - Rev5
+        - Rev6
+        - Rev7
+
+    gains:
+        Rev5: { p: 1000, d: 3.0, i: 0, i_clamp: 1 }
+        Rev6: { p: 1000, d: 1.0, i: 0, i_clamp: 1 }
+        Rev7: { p: 1000, d: 1.0, i: 0, i_clamp: 1 }
+
+    state_publish_rate: 25
+    
+  controller_list:
+  - name: gripperone/arm_controller
+    action_ns: follow_joint_trajectory
+    default: true
+    type: FollowJointTrajectory
+    joints:
+      - Rev1
+      - Rev2
+      - Rev3
+      - Rev4
+  - name: gripperone/hand_controller
+    action_ns: follow_joint_trajectory
+    default: true
+    type: FollowJointTrajectory
+    joints:
+      - Rev5
+      - Rev6
+      - Rev7 
+
+  
+
