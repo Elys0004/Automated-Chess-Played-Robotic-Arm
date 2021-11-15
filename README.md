@@ -6,8 +6,15 @@
 
 * Repository for Intermediate Group 3 to build code!
 
+## Project Description
+
+
+
 ### Steps to clone the repository
 * Launch a terminal and run the command  
 ```
 $ git clone https://github.com/ntu-maerc/i3.git 
 ```
+
+
+
