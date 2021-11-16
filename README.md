@@ -80,8 +80,6 @@ Below we will discuss briefly each part of the Chess-played robotic arm. Further
       <img width="353" alt="Screenshot 2021-11-15 211220" src="https://user-images.githubusercontent.com/90337307/141798097-4b1b3a64-760d-4f3a-a811-083aba09e82c.png">
       <img width="368" alt="Screenshot 2021-11-15 222503" src="https://user-images.githubusercontent.com/90337307/141798305-e91f1c57-bdc0-4dda-9884-77e2032dc935.png">
 
----
-In this state
 
 2.  controller
 
