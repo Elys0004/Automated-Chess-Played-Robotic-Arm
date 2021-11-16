@@ -22,9 +22,10 @@ This automated chess-played robotic arm is build from scratch with the help from
 Below we will discuss briefly each part of the Chess-played robotic arm. Further details will be discussed inside the folder together with the issue that we encounter that could be improve further. 
 
 1. Environment
+
    a. gripperone --> gripperone_description 
    
-     Our robot is called "gripperone" and in this folder, it contains the urdf/xacro file of the gripperone robotic arm.
+     Our robot is called "gripperone" and in this folder, it contains the meshes and urdf/xacro file of the gripperone robotic arm.
      
    b. chess_environment
    
