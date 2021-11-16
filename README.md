@@ -21,7 +21,8 @@ Here is the overview of the chess-played robotic arm with the chessboard
 Below we will discuss briefly each part of the Chess-played robotic arm. Further details will be discussed inside the folder together with the issue that we encounter that could be improve further. 
 1. Environment
    a. gripperone --> gripperone_description 
-     Our robot called "gripperone" and in this folder, it contains the urdf/xacro file of the gripperone robotic arm.
+   
+     Our robot is called "gripperone" and in this folder, it contains the urdf/xacro file of the gripperone robotic arm.
      
    b. chess_environment
      In this folder, it contains the sdf file of the chessboard. 
