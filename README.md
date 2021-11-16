@@ -52,7 +52,7 @@ Below we will discuss briefly each part of the Chess-played robotic arm. Further
    
    c. camera
    
-      Then the camera plug-in is attached on the gazebo which will be used to capture the movement of the chess on the chessboard. 
+      Then the camera plug-in is attached on the gazebo which will be used to detect the player's move. 
       
       Launch a terminal and run the command below to launch the camera
      
