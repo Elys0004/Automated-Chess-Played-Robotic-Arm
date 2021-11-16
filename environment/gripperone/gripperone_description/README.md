@@ -2,7 +2,7 @@
 
 Our "gripperone" robotic arm is designed and assembled using Fusion360. By installing an open source adds-in, "fusion2urdf" plugin, we manage to succesfully convert the 3D model to urdf-xacro file.
 
-
+<img width="373" alt="Screenshot 2021-11-16 201148" src="https://user-images.githubusercontent.com/90337307/141983712-b5e0a8d8-9823-47b8-8c12-c27e95e0e848.png">
 
 Here are the issue and solution that we encountered during this process:
 Issue:
