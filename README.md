@@ -135,14 +135,14 @@ Below we will discuss briefly each part of the Chess-played robotic arm. Further
        
 4. grasp_demo.py and gripperone_moveit.py
 
-    This both python script is used to test the movement of the "gripperone" robotic arm. 
+    This both python script is used to test the movement of the "gripperone" robotic arm controller. 
     
-    To run this script, can run the command below 
+    To run this script, can run the command 
     
           
            $ python3 grasp_demo.py
          
-          
+    or       
           
           
            $ python3 gripeerone_moveit.py
