@@ -111,10 +111,10 @@ Below we will discuss briefly each part of the Chess-played robotic arm. Further
       To launch this, open new terminal and run the command below:
       
       
-          ```
+          
            $ roslaunch GRIP ros_gazebo.launch
          
-          ``` 
+           
       
 3.  robot_driver
 
@@ -128,11 +128,10 @@ Below we will discuss briefly each part of the Chess-played robotic arm. Further
        
        In order to run this chess AI script, launch a new terminal and run the command below
 
-          ```
+          
            $ rosrun robot_driver Chess_AI_ImProc_test.py
          
-          ``` 
-          
+                  
        
 4. grasp_demo.py and gripperone_moveit.py
 
@@ -140,15 +139,15 @@ Below we will discuss briefly each part of the Chess-played robotic arm. Further
     
     To run this script, can run the command below 
     
-          ```
+          
            $ python3 grasp_demo.py
          
-          ``` 
           
-          ```
+          
+          
            $ python3 gripeerone_moveit.py
          
-          ``` 
+          
 
 
 
