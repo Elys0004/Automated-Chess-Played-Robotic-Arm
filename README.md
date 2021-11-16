@@ -2,11 +2,11 @@
 
 * Part of an NTU MAERC initiative
 
-## Intermediate Group 3
+## Intermediate Group 3 - Chess-played Robotic Arm
 
 * Repository for Intermediate Group 3 to build code!
 
-## Project Description - Chess-played Robotic Arm
+## Project Description 
 In this project, chess-played robotic arm was build to compete and play against human physically so that the player can achieve the real experience even when playing it individually. We decided to go for full-simulation of chess-played robotic arm as a proof of concept which could be potentially being further develop into the real physical chess-played robotic arm. 
 
 The robot is build from scratch and it is made possible thank you to the combination and help of various open source contributor. Although we might not be able to achieve the perfect chess-played robotic arm, we hope that this could help others as well. 
