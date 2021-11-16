@@ -25,7 +25,19 @@ Below we will discuss briefly each part of the Chess-played robotic arm. Further
 
    a. gripperone --> gripperone_description 
    
-     Our robot is called "gripperone" and in this folder, it contains the meshes and urdf/xacro file of the gripperone robotic arm.
+     Our robot is called "gripperone" and in this folder, it contains the meshes and urdf/xacro file of the gripperone robotic arm. This folder also provide a launch file for both in Rviz and Gazebo.
+     
+     To launch the robot in gazebo, open a new terminal and run the command below
+     
+     ```
+     
+     $ roslaunch grippperone_description gazebo.launch
+     
+     ```
+        
+     
+      
+     
      
    b. chess_environment
    
