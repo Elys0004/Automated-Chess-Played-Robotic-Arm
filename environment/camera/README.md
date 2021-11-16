@@ -18,7 +18,7 @@ The video can be viewed using the command below:
 
 Rostopic echo will only return a chain of numbers. 
 
-The message type is ROS image. 
+The message type is ROS image. By running the image_converter.py script, it actually convert the ROS Image to OpenCV images and also save the image directly to the robot_driver package so that it can be used further for image processing. 
 
 Here are the issue and solution that we encountered during this process:
 
@@ -26,4 +26,10 @@ Issue:
 1. How to send and make the ROS image readable to the robot_driver python script
 
 Solved:
-1. We convert with ROS cv_bridge package into OpenCV images and then we save the image using PIL Image module. 
+1. We convert with ROS cv_bridge package into OpenCV images and then we save the image using PIL Image module directly to the robot_driver. So image_converter.py script will keep saving the current image that the camera observe and at the mean time, the robot_driver python script will retrieve the image when they need it. 
+
+  ```
+   im = Image.fromarray(resize)
+   im.save(<robot_drivers/scripts location>)
+    
+  ```
