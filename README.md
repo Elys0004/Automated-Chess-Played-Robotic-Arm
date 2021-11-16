@@ -20,12 +20,14 @@ This automated chess-played robotic arm is build from scratch with the help from
 
 
 Below we will discuss briefly each part of the Chess-played robotic arm. Further details will be discussed inside the folder together with the issue that we encounter that could be improve further. 
+
 1. Environment
    a. gripperone --> gripperone_description 
    
      Our robot is called "gripperone" and in this folder, it contains the urdf/xacro file of the gripperone robotic arm.
      
    b. chess_environment
+   
      In this folder, it contains the sdf file of the chessboard. 
      The full environment of the robotic arm and the chessboard can be launch from here as the gripperone robotic arm has been included on the test.launch
      
@@ -36,7 +38,9 @@ Below we will discuss briefly each part of the Chess-played robotic arm. Further
      ```
    
    c. camera
+   
       Then the camera plug-in is attached on the gazebo which will be used to capture the movement of the chess on the chessboard. 
+      
       Launch a terminal and run the command below to launch the camera
      
      ```
@@ -66,7 +70,75 @@ Below we will discuss briefly each part of the Chess-played robotic arm. Further
 ---
 In this state
 
-2.  
+2.  controller
+
+      We have all the environment set up in the environment folder, this controller will be used to control the movement of the robotic arm. 
+      In this controller, we provide two ways on send the commands to the robotic arm:
+      
+      1. Specifiy the position to each of the joints:
+          To enable this, go to ros_controller.launch file under launch folder and make sure it load the "controller.yaml" controller. 
+          
+         ```
+           <rosparam file="$(find GRIP)/config/controllers.yaml" command="load"/>
+         
+         ```
+      2. Send a position for the end-effector:
+
+          To enable this, go to ros_controller.launch file under launch folder and make sure it load the "ros_controllers.yaml" controller. 
+          
+          ```
+           <rosparam file="$(find GRIP)/config/ros_controllers.yaml" command="load"/>
+         
+          ``` 
+       
+      In this controller launch file, it could launch the Rviz and Gazebo simultaneously. The Rviz will be beneficial during motion planning and also scripting. 
+      
+      <img width="664" alt="Screenshot 2021-11-15 230626" src="https://user-images.githubusercontent.com/90337307/141975447-378ff95a-d1e8-43f3-b63c-892278359db5.png">
+      
+      <img width="584" alt="Screenshot 2021-11-15 230749" src="https://user-images.githubusercontent.com/90337307/141975494-a31f59f2-28e3-4b18-89af-702913daa69c.png">
+
+      To launch this, open new terminal and run the command below:
+      
+      
+          ```
+           $ roslaunch GRIP ros_gazebo.launch
+         
+          ``` 
+      
+3.  robot_driver
+
+       This is the vision and brain of the "gripperone" robot, where it utilize image processing as it vision to recognize player's move and also chess AI algorithm as it brain to calculate the next best move. 
+       
+       The output of the chess AI move will then sent to the robotic arm motor driver to move the chess in the desired position. 
+       
+       <img width="388" alt="Screenshot 2021-11-16 192232" src="https://user-images.githubusercontent.com/90337307/141976765-072be216-f071-434a-90e9-ec28be367042.png">
+        
+       <img width="389" alt="Screenshot 2021-11-16 192255" src="https://user-images.githubusercontent.com/90337307/141976784-2668c5b4-0598-4308-91e2-563f482fc6fb.png">
+       
+       In order to run this chess AI script, launch a new terminal and run the command below
+
+          ```
+           $ rosrun robot_driver Chess_AI_ImProc_test.py
+         
+          ``` 
+          
+       
+4. grasp_demo.py and gripperone_moveit.py
+
+    This both python script is used to test the movement of the "gripperone" robotic arm. 
+    
+    To run this script, can run the command below 
+    
+          ```
+           $ python3 grasp_demo.py
+         
+          ``` 
+          
+          ```
+           $ python3 gripeerone_moveit.py
+         
+          ``` 
+
 
 
 ### Steps to clone the repository
