@@ -2,7 +2,7 @@
 
 After obtaining the chess-pieces dae file from open-source contributors, we create a sdf file to define the world environment into the Gazebo simulation. 
 
-We have also integrated the "gripperone" robot with the chess environment in "test.laucnh" so that it could be launch together in one launch file. 
+We have also integrated the "gripperone" robot with the chess environment in "test.launch" so that it could be launch together in one launch file. 
 
 Here are the issue and solution that we encountered during this process:
 
