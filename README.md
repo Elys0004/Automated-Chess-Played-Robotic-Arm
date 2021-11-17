@@ -84,6 +84,7 @@ Below we will discuss briefly each part of the Chess-played robotic arm. Further
 2.  controller
 
       We have all the environment set up in the environment folder, this controller will be used to control the movement of the robotic arm. 
+      
       <img width="572" alt="Screenshot 2021-11-15 230917" src="https://user-images.githubusercontent.com/90337307/142093714-6f69ac48-63d7-46b6-b206-a5b9a54766e7.png">
 
       In this controller, we provide two ways on send the commands to the robotic arm:
