@@ -30,9 +30,7 @@ Below we will discuss briefly each part of the Chess-played robotic arm. Further
      To launch the robot in the gazebo, open a new terminal and run the command below
      
      ```
-     
      $ roslaunch grippperone_description gazebo.launch
-     
      ```
         
      
@@ -44,9 +42,7 @@ Below we will discuss briefly each part of the Chess-played robotic arm. Further
      In this folder, it contains the sdf file of the chessboard. The full environment of the robotic arm and the chessboard can be launched from here as the gripperone robotic arm has been included in the test.launch
      
      ```
-     
      $ roslaunch chess_environment test.launch
-     
      ```
    
    c. camera
@@ -56,9 +52,7 @@ Below we will discuss briefly each part of the Chess-played robotic arm. Further
       Launch a terminal and run the command below to launch the camera
      
      ```
-     
       $ rosrun gazebo_ros spawn_model -file ~/catkin_ws/src/camera/camera.urdf -urdf -x 1.18 -y 0 -z 2.5 -R 3.14 -P 1.57 -Y 0 -model camera1
-      
      ```
      
       <img width="632" alt="Screenshot 2021-11-15 193049" src="https://user-images.githubusercontent.com/90337307/141797921-faab4fc4-02b0-45d8-ba10-cd422cdb27e4.png">
@@ -67,9 +61,7 @@ Below we will discuss briefly each part of the Chess-played robotic arm. Further
       To able to retrieve the image of the chessboard, launch a new terminal, go to your camera directory and run the command below.
       
      ```
-     
       $ python3 image_converter.py
-      
      ```
       
       This python script contains a code where it could retrieve and save the image of the current chessboard directly to your robot_driver folder which will be processed further later on. 
@@ -93,7 +85,6 @@ Below we will discuss briefly each part of the Chess-played robotic arm. Further
           
          ```
            <rosparam file="$(find GRIP)/config/controllers.yaml" command="load"/>
-         
          ```
       2. Send a position for the end-effector:
 
@@ -101,7 +92,6 @@ Below we will discuss briefly each part of the Chess-played robotic arm. Further
           
           ```
            <rosparam file="$(find GRIP)/config/ros_controllers.yaml" command="load"/>
-         
           ``` 
        
       In this controller launch file, it could launch the Rviz and Gazebo simultaneously. The Rviz will be beneficial during motion planning and also scripting. 
