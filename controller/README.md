@@ -11,7 +11,7 @@ There are two ways of controlling the robotic arm:
 
 i. Specifying the position of each joint. 
 
- To load this controller, "controller.yaml" is loaded inside the the "ros_controllers.launch" where it consists of joint position command for each of the joint.
+ To load this controller, "controller.yaml" is loaded inside the the "ros_controllers.launch" where it consists of joint position command for each of the joints.
  
  The joint position can be specified by using python script or launching a new terminal, and run the command below:
  
@@ -29,7 +29,7 @@ ii. Send a position for the end effector
    To load this controller, "ros_controller.yaml" is loaded inside the the "ros_controllers.launch" where it consists of two groups, arm controller and hand controller. The motion can be planned through Rviz or python script. 
   
   
-Here are the issue and solution that we encountered during this process:
+Here are the issue and solutions that we encountered during this process:
 
 Issue:
   
@@ -41,24 +41,24 @@ Issue:
   
 Partially solved:
   
- 1. Make sure when designing the robotic arm, the joint name is not double and every joint link is assembly well. Then regenerate the urdf file.
+ 1. Make sure when designing the robotic arm, the joint name is not double and every joint link is assembled well. Then regenerate the urdf file.
  
- 2. The robotic arm cannot move because need to do some tuning on the PID controller. We use rqt_gui interface to know the parameter suitable for the PID controller on each joint.
+ 2. The robotic arm cannot move because needs to do some tuning on the PID controller. We use rqt_gui interface to know the parameter suitable for the PID controller on each joint.
   
   <img width="685" alt="Screenshot 2021-11-17 195349" src="https://user-images.githubusercontent.com/90337307/142196177-9a6b34cc-e00c-48be-9943-c37bf19ae780.png">
   
-  As shown in the picture above, tune the PID so that the graph between the command given to the joint (blue) and the joint state value (red) should roughly shows the same sinusoidal function. The joint state value shows the current position of the joint that you specified as shown in the gazebo as well. 
+  As shown in the picture above, tune the PID so that the graph between the command given to the joint (blue) and the joint state value (red) should roughly shows the same sinusoidal function. The joint state value show the current position of the joint that you specified as shown in the gazebo as well. 
  
-  To run the rqt gui, open new launch terminal and run the command below:
+  To run the rqt_gui, open the new launch terminal and run the command below:
   
   ``` 
   rosrun rqt_gui rqt_gui
   
   ```
   
-  Although we can successfully move each joint to a desired place, but the joint is not well controlled yet and it might be because of the PID controller since it depends on another controller and we have 7 joint controller that could effect each other. 
+  Although we can successfully move each joint to the desired place, the joint is not well controlled yet and it might be because of the PID controller since it depends on another controller and we have 7 joint controllers that could affect each other. 
   
- 3. Although the MoveIt package could be generated using MoveIt setup assistant, there is some part that need to add on in order to make the controller works. 
+ 3. Although the MoveIt package could be generated using MoveIt setup assistant, there is some part that needs to add on in order to make the controller works. 
   
   On ros_controllers.launch file, we add our controller inside the args, as shown below:
   
@@ -70,7 +70,7 @@ Partially solved:
 					  hand_controller"/>
   ```
   
-  Not only that, we also add joint trajectory controller for each group controller (arm and hand) in the "ros_controller.yaml" file.
+  Not only that, but we also add joint trajectory controllers for each group controller (arm and hand) in the "ros_controller.yaml" file.
   
   ```
    arm_controller:
@@ -105,4 +105,6 @@ Partially solved:
     state_publish_rate: 25
    
   ```
-Now we have actually successfully publish the group topic. However, there is still and issue where when we try to move the robot arm on gazebo, it stated that the controller list is zero. We are quite sure that the controller are actually exist through troubleshooting step shown in this video -->  https://www.youtube.com/watch?v=P7I0n1RPRuk Hence, we can plan on the Rviz but when we try to execute the robot on Rviz, it will show that it failed. 
+Now we have actually successfully published the group topic. However, there is still an issue where when we try to move the robot arm on the gazebo, it stated that the controller list is zero. We are quite sure that the controller are actually existed through the troubleshooting step shown in this video -->  https://www.youtube.com/watch?v=P7I0n1RPRuk 
+	
+Hence, we can plan on the Rviz but when we try to execute the robot on Rviz, it will show that it failed. 
