@@ -84,6 +84,8 @@ Below we will discuss briefly each part of the Chess-played robotic arm. Further
 2.  controller
 
       We have all the environment set up in the environment folder, this controller will be used to control the movement of the robotic arm. 
+      <img width="572" alt="Screenshot 2021-11-15 230917" src="https://user-images.githubusercontent.com/90337307/142093714-6f69ac48-63d7-46b6-b206-a5b9a54766e7.png">
+
       In this controller, we provide two ways on send the commands to the robotic arm:
       
       1. Specifiy the position to each of the joints:
@@ -105,8 +107,6 @@ Below we will discuss briefly each part of the Chess-played robotic arm. Further
       In this controller launch file, it could launch the Rviz and Gazebo simultaneously. The Rviz will be beneficial during motion planning and also scripting. 
       
       <img width="664" alt="Screenshot 2021-11-15 230626" src="https://user-images.githubusercontent.com/90337307/141975447-378ff95a-d1e8-43f3-b63c-892278359db5.png">
-      
-      <img width="584" alt="Screenshot 2021-11-15 230749" src="https://user-images.githubusercontent.com/90337307/141975494-a31f59f2-28e3-4b18-89af-702913daa69c.png">
 
       To launch this, open new terminal and run the command below:
       
