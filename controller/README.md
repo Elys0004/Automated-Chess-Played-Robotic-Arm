@@ -53,7 +53,6 @@ Partially solved:
   
   ``` 
   rosrun rqt_gui rqt_gui
-  
   ```
   
   Although we can successfully move each joint to the desired place, the joint is not well controlled yet and it might be because of the PID controller since it depends on another controller and we have 7 joint controllers that could affect each other. 
@@ -103,7 +102,6 @@ Partially solved:
         Rev7: { p: 1000, d: 1.0, i: 0, i_clamp: 1 }
 
     state_publish_rate: 25
-   
   ```
 Now we have actually successfully published the group topic. However, there is still an issue where when we try to move the robot arm on the gazebo, it stated that the controller list is zero. We are quite sure that the controller are actually existed through the troubleshooting step shown in this video -->  https://www.youtube.com/watch?v=P7I0n1RPRuk 
 	
