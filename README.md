@@ -1,4 +1,4 @@
-# Projects at NTU MAE Robotics Club
+# Projects at NTU MAE Robotics club
 
 * Part of an NTU MAERC initiative
 
